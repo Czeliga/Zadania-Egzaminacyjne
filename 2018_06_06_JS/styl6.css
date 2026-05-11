@@ -1,0 +1,71 @@
+header {
+    background-color: #4E885C;
+    color: orange;
+    text-align: center;
+    height: 110px;
+}
+
+.lewy {
+    background-color: #72A37D;
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+
+section {
+    background-image: "pizza.png";
+    background-color: #A2C3A9;
+    width: 40%;
+    height: 300px;
+    float: left;
+}
+
+.prawy {
+    background-color: #72A37D;
+    text-align: center;
+    width: 30%;
+    height: 300px;
+    float: right;
+}
+
+main {
+    background-color: #A2C3A9;
+    text-align: center;
+    height: 250px;
+    float: left;
+    width: 100%;
+}
+
+footer {
+    background-color: #4E885C;
+    color: orange;
+}
+
+.prawy a {
+    background-color: orange;
+    margin: 15ox;
+    color: green;
+}
+
+img {
+    float: right;
+}
+
+
+/*
+Styl CSS witryny internetowej
+
+
+Plik styl6.css zawiera formatowanie:
+
+ Banera: kolor tła #4E885C, pomarańczowy kolor czcionki, wyrównanie tekstu do środka, wysokość
+110 px
+ Panelu lewego: kolor tła #72A37D, szerokość 30%, wysokość 300 px
+ Panelu środkowego: obraz w tle pizza.png, kolor tła #A2C3A9, szerokość 40%, wysokość 300 px
+ Panelu prawego: kolor tła #72A37D, wyrównanie tekstu do środka, szerokość 30%, wysokość 300 px
+ Panelu dolnego: kolor tła #A2C3A9, wyrównanie tekstu do środka, wysokość 250 px
+ Stopki: kolor tła #4E885C, pomarańczowy kolor czcionki
+ Odsyłacza z panelu prawego: tło pomarańczowe, kolor czcionki zielony, marginesy wewnętrzne 15 px
+(Uwaga: tym stylem powinien być formatowany tylko odsyłacz z panelu prawego, pozostałe odsyłacze
+są formatowane domyślnie) 
+ */
