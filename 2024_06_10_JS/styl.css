@@ -1,0 +1,85 @@
+* {
+    font-family: "Bookman Old Style", Serif;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    width: 50%;
+    height: 100px;
+    letter-spacing: 15px;
+    float: left;
+}
+
+footer {
+    background-color: darkcyan;
+    color: white;
+}
+ 
+main {
+    clear: both;  
+    background-color: Azure;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 4px 4px 8px dimgray;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+main img {
+width: 100%;
+}
+
+p, h2, h3 {
+    margin: 15px;
+}
+
+a {
+    color: white;
+}
+
+h5 {
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h5:hover {
+    background-color: lightseagreen;
+}
+
+.cytat {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;  
+}
+
+.Wyswietl {
+    display: none;
+}
+
+
+/*
+Domyślne formatowanie wszystkich selektorów: krój czcionki Bookman Old Style, w przypadku braku
+- Serif
+‒ Dla obu bloków banera: kolor tła DarkCyan, biały kolor czcionki, szerokość 50%, wysokość 100 px,
+odstępy między literami 15 px
+‒ Dla bloku stopki kolor tła DarkCyan, biały kolor czcionki
+‒ Dla bloku karty pracowniczej: kolor tła Azure, szerokość 30%, marginesy zewnętrzne 1%, cień bloku
+o przesunięciu w obu osiach 4 px, rozmyciu 8 px, kolorze DimGray
+‒ Jedynie dla obrazów w karcie pracowniczej: szerokość 100%
+‒ Dla paragrafu oraz nagłówków drugiego i trzeciego stopnia: marginesy zewnętrzne 15 px
+‒ Dla selektora odnośnika: biały kolor czcionki
+‒ Dla nagłówka piątego stopnia: kolor tła Teal, szerokość 100%, wyrównanie tekstu do środka,
+marginesy wewnętrzne górny i dolny 10 px, pozostałe 0
+‒ W momencie gdy kursor myszy znajdzie się na nagłówku piątego stopnia jego kolor tła zmienia się
+na LightSeaGreen (patrz obraz 2 – środkowa karta)
+‒ Dla bloku cytatów: wyrównanie tekstu do środka, marginesy wewnętrzne górny i dolny 30 px,
+pozostałe 0, czcionka pochylona
+‒ Drugi i trzeci cytat jest usunięty (nie jest wyświetlany)  
+*/
