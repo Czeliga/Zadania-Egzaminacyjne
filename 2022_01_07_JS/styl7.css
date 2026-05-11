@@ -1,0 +1,68 @@
+* {
+    font-family: Helvetica;
+}
+
+header, footer {
+    background-color: RGB(70,130,180);
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+main {
+    background-color: RGB(176,196,222);
+    padding: 50px;
+    text-align: center;
+}
+
+.lewy {
+    background-color: RGB(70,130,180);
+    color: white;
+    width: 80%;
+    float: left;
+    height: 300px;
+}
+
+.prawy {
+    background-color: RGB(70,130,180);
+    color: white;
+    width: 20%;
+    float: right;
+    height: 300px; 
+}
+
+main img {
+    padding: 3px;
+    border: dashed blue 1px;
+    border-radius: 10px;
+}
+
+.lewy img {
+    height: 40%;
+}
+
+.lewy img:hover {
+    border: solid white 1px;
+}
+
+
+
+/*
+Styl CSS witryny internetowej
+Cechy formatowania CSS:
+‒ Są zawarte wyłącznie w zewnętrznym arkuszu stylów
+‒ Domyślne dla całej strony: krój czcionki Helvetica
+‒ Dla banera i stopki: kolor RGB tła 70, 130, 180; biały kolor czcionki, wysokość 30 px, wyrównanie
+tekstu do środka
+‒ Dla bloku głównego: kolor RGB tła 176, 196, 222; marginesy wewnętrzne 50 px, wyrównanie tekstu
+do środka
+‒ Dla bloku lewego: kolor RGB tła 70, 130, 180; biały kolor czcionki, wysokość 300 px, szerokość 80%
+‒ Dla bloku prawego: kolor RGB tła 70, 130, 180; biały kolor czcionki, wysokość 300 px, szerokość 20%
+‒ Dla zdjęcia w bloku głównym: marginesy wewnętrzne 3 px, obramowanie linią kreskowaną w kolorze
+niebieskim grubości 1 px, zakrzywienie rogów obrazu o 10 px
+‒ Dla wszystkich zdjęć w bloku lewym: wysokość 40%, gdy mysz znajdzie się na obrazie pojawia się
+obramowanie linią ciągłą koloru białego i grubości 1px, co widać na Obrazie 2 (trzecia miniatura)
+Uwaga: widoczna na Obrazie 2 biała czcionka w tabeli, w bloku prawym wynika z koloru nadanego dla
+bloku prawego – testowane w Chrome, jeżeli w innej przeglądarce kolor ten jest domyślny (czyli czarny)
+jest to również poprawne rozwiązanie zadania.
+*/

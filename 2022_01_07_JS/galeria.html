@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl7.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <header>
+        <h2>Galeria miejsc ciekawych</h2>
+    </header>
+
+    <main>
+        <img src="lanzarotte.jpg" alt="galeria" id="mainObraz">
+    </main>
+
+    <aside class="lewy">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" onclick="zmienGlowne('lanzarotte.jpg')">
+        <img src="pekin.jpg" alt="pekin" onclick="zmienGlowne('pekin.jpg')">
+        <img src="serengeti.jpg" alt="serengeti" onclick="zmienGlowne('serengeti.jpg')">
+        <img src="wenecja.jpg" alt="wenecja" onclick="zmienGlowne('wenecja.jpg')">
+        <img src="tajlandia.jpg" alt="tajlandia" onclick="zmienGlowne('tajlandia.jpg')">   
+    </aside>
+
+    <aside class="prawy">
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <p>Polub nas <img src="icon-off.png" onclick="ZmianaObrazu()" id="ikona"></p>
+
+        <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a> 
+    </aside>
+
+    <footer>Autor: Jakub Szeliga</footer>
+</body>
+</html>
+
+<script>
+    function ZmianaObrazu()
+    {
+
+        let obrazek = document.getElementById("ikona");
+
+        if(obrazek.src.includes("icon-off.png"))
+        {
+        obrazek.src = "icon-on.png";
+        }
+        else
+        {
+        obrazek.src = "icon-off.png";
+        }
+        
+        
+    }
+
+
+    function zmienGlowne(plik)
+    {
+        let glowny = document.getElementById("mainObraz");
+
+        glowny.src = plik;
+    }
+</script>
+
+
+<!--
+Cechy witryny:
+‒ Składa się ze strony o nazwie galeria.html
+‒ Zastosowany właściwy standard kodowania polskich znaków
+‒ Tytuł strony widoczny na karcie przeglądarki: „Galeria”
+‒ Arkusz stylów w pliku o nazwie styl7.css prawidłowo połączony z kodem strony
+‒ Podział strony na bloki: baner, główny, poniżej obok siebie lewy i prawy, poniżej stopka. Podział
+zrealizowany za pomocą znaczników sekcji tak, aby wygląd układu bloków strony po uruchomieniu
+w przeglądarce, był zgodny z Obrazem 2
+‒ Zawartość banera: nagłówek drugiego stopnia o treści „Galeria miejsc ciekawych”
+‒ Zawartość bloku głównego: obraz lanzarotte.jpg z tekstem alternatywnym „galeria”
+‒ Zawartość bloku lewego:
+‒ Nagłówek trzeciego stopnia o treści „Przeglądaj zdjęcia”
+‒ 5 zdjęć JPG o nazwach kolejno: lanzarotte, pekin, serengeti, wenecja, tajlandia oraz tekście
+alternatywnym takim jak nazwa zdjęcia
+‒ Zawartość bloku prawego:
+‒ Nagłówek trzeciego stopnia o treści „Obrazy w naszej galerii”
+‒ Tabela o dwóch wierszach i trzech kolumnach i wartościach:
+‒ Wiersz pierwszy: Europa, Azja, Afryka
+‒ Wiersz drugi: 2, 2, 1
+‒ Paragraf (akapit) zawierający treść „Polub nas” i obraz icon-off.png
+‒ Odnośnik do adresu https://pixabay.com o treści „Odkryj więcej zdjęć”, odnośnik otwiera się
+w osobnej karcie przeglądarki
+‒ Zawartość stopki: napis o treści „Autor: ”, dalej wstawiony numer PESEL zdającego lub w przypadku
+jego braku inny numer, którym został podpisany arkusz
+-->
