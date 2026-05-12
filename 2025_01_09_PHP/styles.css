@@ -1,0 +1,97 @@
+
+body {
+    background-color: #DDEEDD;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+ol {
+    list-style-type: square; 
+}
+
+li {
+    text-align: left;
+}
+
+header, footer {
+    color: white;
+    font-size: 120%;
+    padding: 10px;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+header {
+    background-color: #409FFF;
+}
+
+footer {
+    background-color: #A0A0A0;
+}
+
+nav {
+    float: left;
+    width: 100%;
+    background-color: #FFFFFF;
+    word-spacing: 30px;
+    padding: 10px;
+}
+
+.lewy {
+    background-color: #E4C0A8;
+    width: 30%;
+    height: 650px;
+    float: left;
+}
+
+.prawy {
+    width: 70%;
+    height: 650px;
+    overflow: auto;
+    float: right;
+}
+
+a {
+    color: #009900;
+}
+
+table, tr, td {
+    border: solid black 1px;
+}
+
+table {
+    margin-top: 20px;
+    padding: auto;
+}
+
+img {
+    width: 90%; 
+}
+
+
+/*
+Styl CSS witryny internetowej
+Styl CSS zdefiniowany jest w całości w zewnętrznym pliku o nazwie styles.css. Cechy formatowania CSS,
+działające na stronie:
+− Dla selektora ciała strony: kolor tła #DDEEDD, krój czcionki Tahoma, wyrównanie tekstu do środka
+− Dla selektora listy punktowanej: typ punktora kwadrat
+− Dla selektora elementu listy: wyrównanie tekstu do lewej
+− Wspólne dla bloku nagłówkowego i stopki: biały kolor czcionki, rozmiar czcionki 120%, marginesy
+wewnętrzne 10 px
+− Dodatkowo dla bloku nagłówkowego: kolor tła #409FFF
+− Dodatkowo dla stopki: kolor tła #A0A0A0
+− Dla bloku nawigacji: kolor tła #FFFFFF, odstępy między wyrazami 30 px, marginesy wewnętrzne
+10 px
+− Dla bloku lewego: kolor tła #E4C0A8, szerokość 30%, wysokość 650 px
+− Dla bloku prawego: szerokość 70%, wysokość 650 px, paski przewijania widoczne tylko gdy tekst nie
+mieści się w bloku
+− Dla selektora odnośnika: kolor czcionki #009900
+− Wspólne dla tabeli i wszystkich komórek tabeli: obramowanie ciągłe koloru czarnego o grubości 1 px
+− Dodatkowo dla tabeli: margines zewnętrzny górny 20 px, marginesy zewnętrzne automatycznie
+wyliczane przez przeglądarkę
+− Dla selektora obrazu: szerokość 90%
+Uwaga: styl CSS ciała strony, odnośnika, listy punktowanej, elementu listy i obrazu należy zdefiniować
+wyłącznie przy pomocy selektora tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy
+witryny.
+*/
