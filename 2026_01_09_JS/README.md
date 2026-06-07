@@ -1,14 +1,15 @@
-# INF.03-03-24.06-SG - Stylizacja paznokci (Logika pętli i menu w JS)
+# INF.03 - Styczeń 2026 (Stylizacja paznokci)
 
 ### Opis:
-Aplikacja witryny salonu kosmetycznego automatyzująca wyświetlanie dostępnych wzorów paznokci oraz dynamiczne przełączanie sekcji menu.
+Aplikacja witryny salonu kosmetycznego oferująca podgląd oferty stylizacji.
+
 
 ### Funkcjonalność:
-* Dynamiczne generowanie zestawu 10 wzorów miniatur przy użyciu pętli `while`
-* Skrypt przełączania widoczności sekcji (Kolor, Kształt, Wzór) na podstawie zdarzenia `onmouseenter`
-* Pełna zgodność ze strukturą i surową składnią klucza oceniania CKE
+* Obsługa onmouseenter przy dynamicznym przełączaniu sekcji menu
+* Obsługa pętli while przy generowaniu miniatur wzorów paznokci
+
 
 ### Technologia:
-* HTML5 (Struktura semantyczna)
-* CSS3 (Układ kolumnowy `float`) 
-* JavaScript (Vanilla JS)
+* HTML5
+* CSS3
+* JavaScript
