@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylizacja paznokci</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body  onload="pokaz()">
+
+    <aside>
+        <img src="manicure.jpg" alt="stylizacja paznokci">
+    </aside>
+
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+
+        <nav>
+
+            <input type="button" value="Kolor" id="kolor" onmouseenter="zmien('kolor')">
+            <input type="button" value="Kształt" id="ksztalt" onmouseenter="zmien('ksztalt')">
+            <input type="button" value="Wzór" id="wzor" onmouseenter="zmien('wzor')"> 
+        </nav>
+    
+
+        <section id="sekcja1">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="Kolory paznokci">
+            <br>
+            <input type="color" value="#FF0000">
+        </section>
+
+
+        <section id="sekcja2">
+            <h2>Kształt</h2>
+            <img src="Ksztalt.png" alt="Kształty paznokci">
+            <br>
+
+            <select>
+                <option>migdał</option>
+                <option>zaokrąglony</option>
+                <option>kwadratowy</option>
+                <option>balerina</option>
+                <option>zaokrąglony kwadrat</option> 
+            </select>
+        </section>
+
+        <section id="sekcja3">
+            <h2>Wzór</h2>
+             <div id="wynik"></div>
+            <input type="number" min="1" max="10" step="1">
+        </section>
+    </main>
+
+    <footer>
+        Autor strony: JS
+    </footer>
+
+</body>
+</html>
+
+<script>
+    function pokaz()
+    {
+    var x = 1;
+    while(x <= 10)
+        {
+        document.getElementById("wynik").innerHTML += "<img src='" + x + ".jpg' class='wzory'>";
+        x++;
+        }
+    }
+
+ function zmien(NaCo)
+ {
+    var sekcja1 = document.getElementById("sekcja1");
+    var sekcja2 = document.getElementById("sekcja2");
+    var sekcja3 = document.getElementById("sekcja3");
+    
+
+    if(NaCo == "kolor")
+    {  
+        sekcja1.style.display = "block";
+        sekcja2.style.display = "none";
+        sekcja3.style.display = "none";
+    }
+    if(NaCo == "ksztalt")
+    {  
+        sekcja1.style.display = "none";
+        sekcja2.style.display = "block";
+        sekcja3.style.display = "none";
+    }
+    if(NaCo == "wzor")
+    {  
+        sekcja1.style.display = "none";
+        sekcja2.style.display = "none";
+        sekcja3.style.display = "block";
+    }
+ }
+</script>
